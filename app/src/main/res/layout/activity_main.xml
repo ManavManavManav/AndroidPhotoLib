@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5403DAC5"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/mainAddAlbumButton"
+        android:layout_width="379dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="4dp"
+        android:text="Add"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/manav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/mainAlbumListView"
+        android:layout_width="383dp"
+        android:layout_height="455dp"
+        android:background="#4FE91E63"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

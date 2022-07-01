@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6FF00"
+    tools:context=".SlideShowActivity">
+
+    <TextView
+        android:id="@+id/SlideShowDateBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slideShowImageView" />
+
+    <TextView
+        android:id="@+id/SlideShowCaptionView"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slideShowImageView" />
+
+    <Button
+        android:id="@+id/nextSlideShowButton"
+        android:layout_width="82dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="104dp"
+        android:backgroundTint="@color/manav"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="@+id/slideShowImageView"
+        app:layout_constraintTop_toBottomOf="@+id/slideShowImageView" />
+
+    <ImageView
+        android:id="@+id/slideShowImageView"
+        android:layout_width="417dp"
+        android:layout_height="291dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="#000000"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/divider_horizontal_dim_dark" />
+
+    <Button
+        android:id="@+id/BackToDisplayImageButton"
+        android:layout_width="82dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="384dp"
+        android:backgroundTint="@color/manav"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/prevSlideShowButton"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="340dp"
+        android:backgroundTint="@color/manav"
+        android:text="Prev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
